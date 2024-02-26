@@ -1,22 +1,17 @@
-using System;
+﻿using System;
+Console.WriteLine("hello");
+Datatypes dt1= new();
+dt1.Learn();
+Methods M=new();
+M.Greet("Namaste");
+var highest= M.GetMax(3.4,5.6,8.4,23.4);
+var highest2= M.GetMax(3.4,8.4,23.4);
+var highest3= M.GetMax(3.4,5.6);
+var highest4= M.GetMax(23.4);
+Generic g= new(); 
+g.Display<string>("sapana shrestha");
+g.Display<int>(303);
 
-class Methods
-{
-   public void Greet()
-    {
-        Console.WriteLine(" Hey, there!");
-    }
-    public void Greet(string greeting)
-    {
-        Console.WriteLine($" {greeting}, there!"); // string interpolation
-
-    }
-
-    public float CalculateBMI(float weightInKg, float heightInfeet)
-    {
-        var  heightInM= heightInfeet*0.3048f;
-        var bmi= weightInKg/ (heightInM*heightInM);
-        return bmi;
-    }
-
-}
+Student Jenu= new Student();
+Student smriti= new Student("smriti kc",123);
+Jenu.RollNumber=5;
